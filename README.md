@@ -11,9 +11,11 @@ These `Animators` correctly work with all view states and `RecyclerView` states 
 # Include in your project
 ## Using Maven
 ```javascript
-implementation "com.mikepenz:itemanimators:1.0.1@aar"
-implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
+implementation "com.mikepenz:itemanimators:1.1.0"
+implementation "androidx.recyclerview:recyclerview:${androidXVersion}"
 ```
+
+To use appcompat please use a version smaller than 1.1.0. (See the releases on GitHub)
 
 ## How to use
 ```java
@@ -58,7 +60,7 @@ mRecyclerView.setItemAnimator(new ScaleUpAnimator());
 
 # License
 
-    Copyright 2016 Mike Penz
+    Copyright 2018 Mike Penz
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
